@@ -1,0 +1,31 @@
+Thu May 11 19:45:49 2017 OpenVPN 2.3.11 arm-unknown-linux-gnueabihf [SSL (OpenSSL)] [LZO] [EPOLL] [PKCS11] [MH] [IPv6] built on Jun 22 2016
+Thu May 11 19:45:49 2017 library versions: OpenSSL 1.0.2g  1 Mar 2016, LZO 2.08
+Thu May 11 19:45:49 2017 Diffie-Hellman initialized with 2048 bit key
+Thu May 11 19:45:49 2017 Socket Buffers: R=[163840->163840] S=[163840->163840]
+Thu May 11 19:45:49 2017 TUN/TAP device tun0 opened
+Thu May 11 19:45:49 2017 TUN/TAP TX queue length set to 100
+Thu May 11 19:45:49 2017 do_ifconfig, tt->ipv6=0, tt->did_ifconfig_ipv6_setup=0
+Thu May 11 19:45:49 2017 /sbin/ip link set dev tun0 up mtu 1500
+Thu May 11 19:45:49 2017 /sbin/ip addr add dev tun0 192.168.200.1/24 broadcast 192.168.200.255
+Thu May 11 19:45:49 2017 UDPv4 link local (bound): [undef]
+Thu May 11 19:45:49 2017 UDPv4 link remote: [undef]
+Thu May 11 19:45:49 2017 MULTI: multi_init called, r=256 v=256
+Thu May 11 19:45:49 2017 IFCONFIG POOL: base=192.168.200.2 size=252, ipv6=0
+Thu May 11 19:45:49 2017 IFCONFIG POOL LIST
+Thu May 11 19:45:49 2017 Initialization Sequence Completed
+Thu May 11 19:46:34 2017 109.166.137.103:10426 TLS: Initial packet from [AF_INET]109.166.137.103:10426, sid=77810ff0 c525cb0e
+Thu May 11 19:46:35 2017 109.166.137.103:10426 VERIFY OK: depth=2, C=RO, ST=B, L=Bucharest, O=PPSCU.COM, OU=CA, CN=root.ppscu.com, name=CA-PPSCU, emailAddress=mail@ppscu.com
+Thu May 11 19:46:35 2017 109.166.137.103:10426 VERIFY OK: depth=1, C=RO, ST=B, L=Bucharest, O=PPSCU.COM, OU=CA, CN=inter.ppscu.com, name=CA-PPSCU, emailAddress=mail@ppscu.com
+Thu May 11 19:46:35 2017 109.166.137.103:10426 VERIFY OK: depth=0, C=RO, ST=B, L=Bucharest, O=PPSCU.COM, OU=CA, CN=danpopescu, name=CA-PPSCU, emailAddress=mail@ppscu.com
+Thu May 11 19:46:35 2017 109.166.137.103:10426 Data Channel Encrypt: Cipher 'AES-128-CBC' initialized with 128 bit key
+Thu May 11 19:46:35 2017 109.166.137.103:10426 Data Channel Encrypt: Using 256 bit message hash 'SHA256' for HMAC authentication
+Thu May 11 19:46:35 2017 109.166.137.103:10426 Data Channel Decrypt: Cipher 'AES-128-CBC' initialized with 128 bit key
+Thu May 11 19:46:35 2017 109.166.137.103:10426 Data Channel Decrypt: Using 256 bit message hash 'SHA256' for HMAC authentication
+Thu May 11 19:46:35 2017 109.166.137.103:10426 Control Channel: TLSv1.2, cipher TLSv1/SSLv3 DHE-RSA-AES256-GCM-SHA384, 2048 bit RSA
+Thu May 11 19:46:35 2017 109.166.137.103:10426 [danpopescu] Peer Connection Initiated with [AF_INET]109.166.137.103:10426
+Thu May 11 19:46:35 2017 danpopescu/109.166.137.103:10426 MULTI_sva: pool returned IPv4=192.168.200.2, IPv6=(Not enabled)
+Thu May 11 19:46:35 2017 danpopescu/109.166.137.103:10426 MULTI: Learn: 192.168.200.2 -> danpopescu/109.166.137.103:10426
+Thu May 11 19:46:35 2017 danpopescu/109.166.137.103:10426 MULTI: primary virtual IP for danpopescu/109.166.137.103:10426: 192.168.200.2
+Thu May 11 19:46:38 2017 danpopescu/109.166.137.103:10426 PUSH: Received control message: 'PUSH_REQUEST'
+Thu May 11 19:46:38 2017 danpopescu/109.166.137.103:10426 send_push_reply(): safe_cap=940
+Thu May 11 19:46:38 2017 danpopescu/109.166.137.103:10426 SENT CONTROL [danpopescu]: 'PUSH_REPLY,route 192.168.100.0 255.255.255.0 192.168.200.1,route-gateway 192.168.200.1,topology subnet,ping 10,ping-restart 60,ifconfig 192.168.200.2 255.255.255.0' (status=1)

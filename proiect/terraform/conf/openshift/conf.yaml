@@ -1,0 +1,49 @@
+#################################################
+# Openshift Project by Popescu Dan Alexandru   #
+################################################
+---
+authentication:
+  user_name:  "admin"
+  tenant_name: "Openshift"
+  password: "Ubisoft2016"
+  auth_url: "http://192.168.100.100:5000/v3"
+
+project:
+  domain: "ppscu"
+  region: "RegionOne"
+
+network:
+  name: "internal_network"
+  state_up: "true"
+  subnet:
+    name: "internal_subnet"
+    cidr: "10.10.10.0/24"
+  router:
+    name: "openshift-router"
+
+instances:
+  - role: "ksmaster"
+    os: "centos7"
+    count: 1
+    security_groups: kubernetes_master
+    network:
+        name: "internal_network"
+        access_network: True
+        floating_ip: True
+    volumes:
+      - name: "data"
+        size: 5
+  - role: "ksnode"
+    os: "centos7"
+    count: 2
+    security_groups: kubernetes_node
+    network:
+        name: "internal_network"
+        access_network: True
+        floating_ip: True
+    volumes:
+      - name: "data"
+        size: 5
+
+
+

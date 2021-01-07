@@ -1,0 +1,22 @@
+proxy:
+  listen:
+    address: "0.0.0.0"
+    port: 8080
+  auth: True
+  services:
+  - name: service1
+    domain: service1.my-company.com
+    loadbalancing: "roundrobin"
+    hosts:
+    - address: "backend1"
+      port: 9090
+    - address: "backend2"
+      port: 9090
+  - name: service2
+    domain: service2.my-company.com
+    loadbalancing: "random"
+    hosts:
+    - address: "backend3"
+      port: 9090
+    - address: "backend4"
+      port: 9090

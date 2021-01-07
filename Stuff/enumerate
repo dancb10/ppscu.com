@@ -1,0 +1,5 @@
+for k,v in enumerate(range(10)):
+    print(k,v)
+print("\n")
+for key, value in enumerate({"a":"1","b":"2","c":3}):
+    print(key, value)

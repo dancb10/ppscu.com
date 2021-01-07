@@ -1,0 +1,48 @@
+version: '3.0'
+services:
+
+  postgres:
+    image: docker.io/postgres:10
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: app
+
+  backend1:
+    image: docker.io/dancb10/backend
+    ports:
+      - "4000:9090"
+
+  backend2:
+    image: docker.io/dancb10/backend
+    ports:
+      - "5000:9090"
+
+  backend3:
+    image: docker.io/dancb10/backend
+    ports:
+      - "6000:9090"
+
+  backend4:
+    image: docker.io/dancb10/backend
+    ports:
+      - "7000:9090"
+
+  app-db-migrate:
+    image: docker.io/dancb10/app
+    command: /bin/sh -c "sleep 5 && /home/app/db-migrate.sh"
+    depends_on:
+      - postgres
+
+  app:
+    image: docker.io/dancb10/app
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+      - backend1
+      - backend2
+      - backend3
+      - backend4

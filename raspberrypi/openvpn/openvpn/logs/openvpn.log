@@ -1,0 +1,160 @@
+Sat May 13 06:04:38 2017 OpenVPN 2.3.11 arm-unknown-linux-gnueabihf [SSL (OpenSSL)] [LZO] [EPOLL] [PKCS11] [MH] [IPv6] built on Jun 22 2016
+Sat May 13 06:04:38 2017 library versions: OpenSSL 1.0.2g  1 Mar 2016, LZO 2.08
+Sat May 13 06:04:38 2017 Diffie-Hellman initialized with 2048 bit key
+Sat May 13 06:04:38 2017 Socket Buffers: R=[163840->163840] S=[163840->163840]
+Sat May 13 06:04:38 2017 TUN/TAP device tun0 opened
+Sat May 13 06:04:38 2017 TUN/TAP TX queue length set to 100
+Sat May 13 06:04:38 2017 do_ifconfig, tt->ipv6=0, tt->did_ifconfig_ipv6_setup=0
+Sat May 13 06:04:38 2017 /sbin/ip link set dev tun0 up mtu 1500
+Sat May 13 06:04:38 2017 /sbin/ip addr add dev tun0 192.168.200.1/24 broadcast 192.168.200.255
+Sat May 13 06:04:38 2017 UDPv4 link local (bound): [undef]
+Sat May 13 06:04:38 2017 UDPv4 link remote: [undef]
+Sat May 13 06:04:38 2017 MULTI: multi_init called, r=256 v=256
+Sat May 13 06:04:38 2017 IFCONFIG POOL: base=192.168.200.2 size=252, ipv6=0
+Sat May 13 06:04:38 2017 ifconfig_pool_read(), in='danpopescu,192.168.200.2', TODO: IPv6
+Sat May 13 06:04:38 2017 succeeded -> ifconfig_pool_set()
+Sat May 13 06:04:38 2017 IFCONFIG POOL LIST
+Sat May 13 06:04:38 2017 danpopescu,192.168.200.2
+Sat May 13 06:04:38 2017 Initialization Sequence Completed
+Sat May 13 06:23:51 2017 109.166.130.185:12938 TLS: Initial packet from [AF_INET]109.166.130.185:12938, sid=165e628b cdc7bb98
+Sat May 13 06:23:52 2017 109.166.130.185:12938 VERIFY OK: depth=2, C=RO, ST=B, L=Bucharest, O=PPSCU.COM, OU=CA, CN=root.ppscu.com, name=CA-PPSCU, emailAddress=mail@ppscu.com
+Sat May 13 06:23:52 2017 109.166.130.185:12938 VERIFY OK: depth=1, C=RO, ST=B, L=Bucharest, O=PPSCU.COM, OU=CA, CN=inter.ppscu.com, name=CA-PPSCU, emailAddress=mail@ppscu.com
+Sat May 13 06:23:52 2017 109.166.130.185:12938 VERIFY OK: depth=0, C=RO, ST=B, L=Bucharest, O=PPSCU.COM, OU=CA, CN=danpopescu, name=CA-PPSCU, emailAddress=mail@ppscu.com
+Sat May 13 06:23:52 2017 109.166.130.185:12938 Data Channel Encrypt: Cipher 'AES-128-CBC' initialized with 128 bit key
+Sat May 13 06:23:52 2017 109.166.130.185:12938 Data Channel Encrypt: Using 256 bit message hash 'SHA256' for HMAC authentication
+Sat May 13 06:23:52 2017 109.166.130.185:12938 Data Channel Decrypt: Cipher 'AES-128-CBC' initialized with 128 bit key
+Sat May 13 06:23:52 2017 109.166.130.185:12938 Data Channel Decrypt: Using 256 bit message hash 'SHA256' for HMAC authentication
+Sat May 13 06:23:52 2017 109.166.130.185:12938 Control Channel: TLSv1.2, cipher TLSv1/SSLv3 DHE-RSA-AES256-GCM-SHA384, 2048 bit RSA
+Sat May 13 06:23:52 2017 109.166.130.185:12938 [danpopescu] Peer Connection Initiated with [AF_INET]109.166.130.185:12938
+Sat May 13 06:23:52 2017 danpopescu/109.166.130.185:12938 MULTI_sva: pool returned IPv4=192.168.200.2, IPv6=(Not enabled)
+Sat May 13 06:23:52 2017 danpopescu/109.166.130.185:12938 MULTI: Learn: 192.168.200.2 -> danpopescu/109.166.130.185:12938
+Sat May 13 06:23:52 2017 danpopescu/109.166.130.185:12938 MULTI: primary virtual IP for danpopescu/109.166.130.185:12938: 192.168.200.2
+Sat May 13 06:23:55 2017 danpopescu/109.166.130.185:12938 PUSH: Received control message: 'PUSH_REQUEST'
+Sat May 13 06:23:55 2017 danpopescu/109.166.130.185:12938 send_push_reply(): safe_cap=940
+Sat May 13 06:23:55 2017 danpopescu/109.166.130.185:12938 SENT CONTROL [danpopescu]: 'PUSH_REPLY,route 192.168.100.0 255.255.255.0 192.168.200.1,route-gateway 192.168.200.1,topology subnet,ping 10,ping-restart 60,ifconfig 192.168.200.2 255.255.255.0' (status=1)
+Sat May 13 06:37:53 2017 danpopescu/109.166.130.185:12938 [danpopescu] Inactivity timeout (--ping-restart), restarting
+Sat May 13 06:37:53 2017 danpopescu/109.166.130.185:12938 SIGUSR1[soft,ping-restart] received, client-instance restarting
+Sat May 13 08:54:50 2017 109.166.130.185:6340 TLS: Initial packet from [AF_INET]109.166.130.185:6340, sid=0473fbe0 9bc9896e
+Sat May 13 08:54:50 2017 109.166.130.185:6340 VERIFY OK: depth=2, C=RO, ST=B, L=Bucharest, O=PPSCU.COM, OU=CA, CN=root.ppscu.com, name=CA-PPSCU, emailAddress=mail@ppscu.com
+Sat May 13 08:54:50 2017 109.166.130.185:6340 VERIFY OK: depth=1, C=RO, ST=B, L=Bucharest, O=PPSCU.COM, OU=CA, CN=inter.ppscu.com, name=CA-PPSCU, emailAddress=mail@ppscu.com
+Sat May 13 08:54:50 2017 109.166.130.185:6340 VERIFY OK: depth=0, C=RO, ST=B, L=Bucharest, O=PPSCU.COM, OU=CA, CN=danpopescu, name=CA-PPSCU, emailAddress=mail@ppscu.com
+Sat May 13 08:54:51 2017 109.166.130.185:6340 Data Channel Encrypt: Cipher 'AES-128-CBC' initialized with 128 bit key
+Sat May 13 08:54:51 2017 109.166.130.185:6340 Data Channel Encrypt: Using 256 bit message hash 'SHA256' for HMAC authentication
+Sat May 13 08:54:51 2017 109.166.130.185:6340 Data Channel Decrypt: Cipher 'AES-128-CBC' initialized with 128 bit key
+Sat May 13 08:54:51 2017 109.166.130.185:6340 Data Channel Decrypt: Using 256 bit message hash 'SHA256' for HMAC authentication
+Sat May 13 08:54:51 2017 109.166.130.185:6340 Control Channel: TLSv1.2, cipher TLSv1/SSLv3 DHE-RSA-AES256-GCM-SHA384, 2048 bit RSA
+Sat May 13 08:54:51 2017 109.166.130.185:6340 [danpopescu] Peer Connection Initiated with [AF_INET]109.166.130.185:6340
+Sat May 13 08:54:51 2017 danpopescu/109.166.130.185:6340 MULTI_sva: pool returned IPv4=192.168.200.2, IPv6=(Not enabled)
+Sat May 13 08:54:51 2017 danpopescu/109.166.130.185:6340 MULTI: Learn: 192.168.200.2 -> danpopescu/109.166.130.185:6340
+Sat May 13 08:54:51 2017 danpopescu/109.166.130.185:6340 MULTI: primary virtual IP for danpopescu/109.166.130.185:6340: 192.168.200.2
+Sat May 13 08:54:53 2017 danpopescu/109.166.130.185:6340 PUSH: Received control message: 'PUSH_REQUEST'
+Sat May 13 08:54:53 2017 danpopescu/109.166.130.185:6340 send_push_reply(): safe_cap=940
+Sat May 13 08:54:53 2017 danpopescu/109.166.130.185:6340 SENT CONTROL [danpopescu]: 'PUSH_REPLY,route 192.168.100.0 255.255.255.0 192.168.200.1,route-gateway 192.168.200.1,topology subnet,ping 10,ping-restart 60,ifconfig 192.168.200.2 255.255.255.0' (status=1)
+Sat May 13 09:15:03 2017 109.166.130.185:9204 TLS: Initial packet from [AF_INET]109.166.130.185:9204, sid=1279be39 24a75fe0
+Sat May 13 09:15:04 2017 109.166.130.185:9204 VERIFY OK: depth=2, C=RO, ST=B, L=Bucharest, O=PPSCU.COM, OU=CA, CN=root.ppscu.com, name=CA-PPSCU, emailAddress=mail@ppscu.com
+Sat May 13 09:15:04 2017 109.166.130.185:9204 VERIFY OK: depth=1, C=RO, ST=B, L=Bucharest, O=PPSCU.COM, OU=CA, CN=inter.ppscu.com, name=CA-PPSCU, emailAddress=mail@ppscu.com
+Sat May 13 09:15:04 2017 109.166.130.185:9204 VERIFY OK: depth=0, C=RO, ST=B, L=Bucharest, O=PPSCU.COM, OU=CA, CN=danpopescu, name=CA-PPSCU, emailAddress=mail@ppscu.com
+Sat May 13 09:15:04 2017 109.166.130.185:9204 Data Channel Encrypt: Cipher 'AES-128-CBC' initialized with 128 bit key
+Sat May 13 09:15:04 2017 109.166.130.185:9204 Data Channel Encrypt: Using 256 bit message hash 'SHA256' for HMAC authentication
+Sat May 13 09:15:04 2017 109.166.130.185:9204 Data Channel Decrypt: Cipher 'AES-128-CBC' initialized with 128 bit key
+Sat May 13 09:15:04 2017 109.166.130.185:9204 Data Channel Decrypt: Using 256 bit message hash 'SHA256' for HMAC authentication
+Sat May 13 09:15:04 2017 109.166.130.185:9204 Control Channel: TLSv1.2, cipher TLSv1/SSLv3 DHE-RSA-AES256-GCM-SHA384, 2048 bit RSA
+Sat May 13 09:15:04 2017 109.166.130.185:9204 [danpopescu] Peer Connection Initiated with [AF_INET]109.166.130.185:9204
+Sat May 13 09:15:04 2017 MULTI: new connection by client 'danpopescu' will cause previous active sessions by this client to be dropped.  Remember to use the --duplicate-cn option if you want multiple clients using the same certificate or username to concurrently connect.
+Sat May 13 09:15:04 2017 MULTI_sva: pool returned IPv4=192.168.200.2, IPv6=(Not enabled)
+Sat May 13 09:15:04 2017 MULTI: Learn: 192.168.200.2 -> danpopescu/109.166.130.185:9204
+Sat May 13 09:15:04 2017 MULTI: primary virtual IP for danpopescu/109.166.130.185:9204: 192.168.200.2
+Sat May 13 09:15:06 2017 danpopescu/109.166.130.185:9204 PUSH: Received control message: 'PUSH_REQUEST'
+Sat May 13 09:15:06 2017 danpopescu/109.166.130.185:9204 send_push_reply(): safe_cap=940
+Sat May 13 09:15:06 2017 danpopescu/109.166.130.185:9204 SENT CONTROL [danpopescu]: 'PUSH_REPLY,route 192.168.100.0 255.255.255.0 192.168.200.1,route-gateway 192.168.200.1,topology subnet,ping 10,ping-restart 60,ifconfig 192.168.200.2 255.255.255.0' (status=1)
+Sat May 13 09:17:12 2017 danpopescu/109.166.130.185:9204 [danpopescu] Inactivity timeout (--ping-restart), restarting
+Sat May 13 09:17:12 2017 danpopescu/109.166.130.185:9204 SIGUSR1[soft,ping-restart] received, client-instance restarting
+Sat May 13 09:28:12 2017 109.166.130.185:8344 TLS: Initial packet from [AF_INET]109.166.130.185:8344, sid=7a46b71f d8365d87
+Sat May 13 09:28:12 2017 109.166.130.185:8344 VERIFY OK: depth=2, C=RO, ST=B, L=Bucharest, O=PPSCU.COM, OU=CA, CN=root.ppscu.com, name=CA-PPSCU, emailAddress=mail@ppscu.com
+Sat May 13 09:28:12 2017 109.166.130.185:8344 VERIFY OK: depth=1, C=RO, ST=B, L=Bucharest, O=PPSCU.COM, OU=CA, CN=inter.ppscu.com, name=CA-PPSCU, emailAddress=mail@ppscu.com
+Sat May 13 09:28:12 2017 109.166.130.185:8344 VERIFY OK: depth=0, C=RO, ST=B, L=Bucharest, O=PPSCU.COM, OU=CA, CN=danpopescu, name=CA-PPSCU, emailAddress=mail@ppscu.com
+Sat May 13 09:28:12 2017 109.166.130.185:8344 Data Channel Encrypt: Cipher 'AES-128-CBC' initialized with 128 bit key
+Sat May 13 09:28:12 2017 109.166.130.185:8344 Data Channel Encrypt: Using 256 bit message hash 'SHA256' for HMAC authentication
+Sat May 13 09:28:12 2017 109.166.130.185:8344 Data Channel Decrypt: Cipher 'AES-128-CBC' initialized with 128 bit key
+Sat May 13 09:28:12 2017 109.166.130.185:8344 Data Channel Decrypt: Using 256 bit message hash 'SHA256' for HMAC authentication
+Sat May 13 09:28:13 2017 109.166.130.185:8344 Control Channel: TLSv1.2, cipher TLSv1/SSLv3 DHE-RSA-AES256-GCM-SHA384, 2048 bit RSA
+Sat May 13 09:28:13 2017 109.166.130.185:8344 [danpopescu] Peer Connection Initiated with [AF_INET]109.166.130.185:8344
+Sat May 13 09:28:13 2017 danpopescu/109.166.130.185:8344 MULTI_sva: pool returned IPv4=192.168.200.2, IPv6=(Not enabled)
+Sat May 13 09:28:13 2017 danpopescu/109.166.130.185:8344 MULTI: Learn: 192.168.200.2 -> danpopescu/109.166.130.185:8344
+Sat May 13 09:28:13 2017 danpopescu/109.166.130.185:8344 MULTI: primary virtual IP for danpopescu/109.166.130.185:8344: 192.168.200.2
+Sat May 13 09:28:15 2017 danpopescu/109.166.130.185:8344 PUSH: Received control message: 'PUSH_REQUEST'
+Sat May 13 09:28:15 2017 danpopescu/109.166.130.185:8344 send_push_reply(): safe_cap=940
+Sat May 13 09:28:15 2017 danpopescu/109.166.130.185:8344 SENT CONTROL [danpopescu]: 'PUSH_REPLY,route 192.168.100.0 255.255.255.0 192.168.200.1,route-gateway 192.168.200.1,topology subnet,ping 10,ping-restart 60,ifconfig 192.168.200.2 255.255.255.0' (status=1)
+Sat May 13 09:30:26 2017 danpopescu/109.166.130.185:8344 [danpopescu] Inactivity timeout (--ping-restart), restarting
+Sat May 13 09:30:26 2017 danpopescu/109.166.130.185:8344 SIGUSR1[soft,ping-restart] received, client-instance restarting
+Sat May 13 10:16:29 2017 109.166.130.185:11931 TLS: Initial packet from [AF_INET]109.166.130.185:11931, sid=ede20fd0 7c8e9599
+Sat May 13 10:16:29 2017 109.166.130.185:11931 VERIFY OK: depth=2, C=RO, ST=B, L=Bucharest, O=PPSCU.COM, OU=CA, CN=root.ppscu.com, name=CA-PPSCU, emailAddress=mail@ppscu.com
+Sat May 13 10:16:29 2017 109.166.130.185:11931 VERIFY OK: depth=1, C=RO, ST=B, L=Bucharest, O=PPSCU.COM, OU=CA, CN=inter.ppscu.com, name=CA-PPSCU, emailAddress=mail@ppscu.com
+Sat May 13 10:16:29 2017 109.166.130.185:11931 VERIFY OK: depth=0, C=RO, ST=B, L=Bucharest, O=PPSCU.COM, OU=CA, CN=danpopescu, name=CA-PPSCU, emailAddress=mail@ppscu.com
+Sat May 13 10:16:30 2017 109.166.130.185:11931 Data Channel Encrypt: Cipher 'AES-128-CBC' initialized with 128 bit key
+Sat May 13 10:16:30 2017 109.166.130.185:11931 Data Channel Encrypt: Using 256 bit message hash 'SHA256' for HMAC authentication
+Sat May 13 10:16:30 2017 109.166.130.185:11931 Data Channel Decrypt: Cipher 'AES-128-CBC' initialized with 128 bit key
+Sat May 13 10:16:30 2017 109.166.130.185:11931 Data Channel Decrypt: Using 256 bit message hash 'SHA256' for HMAC authentication
+Sat May 13 10:16:30 2017 109.166.130.185:11931 Control Channel: TLSv1.2, cipher TLSv1/SSLv3 DHE-RSA-AES256-GCM-SHA384, 2048 bit RSA
+Sat May 13 10:16:30 2017 109.166.130.185:11931 [danpopescu] Peer Connection Initiated with [AF_INET]109.166.130.185:11931
+Sat May 13 10:16:30 2017 danpopescu/109.166.130.185:11931 MULTI_sva: pool returned IPv4=192.168.200.2, IPv6=(Not enabled)
+Sat May 13 10:16:30 2017 danpopescu/109.166.130.185:11931 MULTI: Learn: 192.168.200.2 -> danpopescu/109.166.130.185:11931
+Sat May 13 10:16:30 2017 danpopescu/109.166.130.185:11931 MULTI: primary virtual IP for danpopescu/109.166.130.185:11931: 192.168.200.2
+Sat May 13 10:16:32 2017 danpopescu/109.166.130.185:11931 PUSH: Received control message: 'PUSH_REQUEST'
+Sat May 13 10:16:32 2017 danpopescu/109.166.130.185:11931 send_push_reply(): safe_cap=940
+Sat May 13 10:16:32 2017 danpopescu/109.166.130.185:11931 SENT CONTROL [danpopescu]: 'PUSH_REPLY,route 192.168.100.0 255.255.255.0 192.168.200.1,route-gateway 192.168.200.1,topology subnet,ping 10,ping-restart 60,ifconfig 192.168.200.2 255.255.255.0' (status=1)
+Sat May 13 10:23:24 2017 danpopescu/109.166.130.185:11931 [danpopescu] Inactivity timeout (--ping-restart), restarting
+Sat May 13 10:23:24 2017 danpopescu/109.166.130.185:11931 SIGUSR1[soft,ping-restart] received, client-instance restarting
+Sat May 13 11:14:20 2017 109.166.130.185:9212 TLS: Initial packet from [AF_INET]109.166.130.185:9212, sid=6dff2c30 2647bab2
+Sat May 13 11:14:20 2017 109.166.130.185:9212 VERIFY OK: depth=2, C=RO, ST=B, L=Bucharest, O=PPSCU.COM, OU=CA, CN=root.ppscu.com, name=CA-PPSCU, emailAddress=mail@ppscu.com
+Sat May 13 11:14:20 2017 109.166.130.185:9212 VERIFY OK: depth=1, C=RO, ST=B, L=Bucharest, O=PPSCU.COM, OU=CA, CN=inter.ppscu.com, name=CA-PPSCU, emailAddress=mail@ppscu.com
+Sat May 13 11:14:20 2017 109.166.130.185:9212 VERIFY OK: depth=0, C=RO, ST=B, L=Bucharest, O=PPSCU.COM, OU=CA, CN=danpopescu, name=CA-PPSCU, emailAddress=mail@ppscu.com
+Sat May 13 11:14:20 2017 109.166.130.185:9212 Data Channel Encrypt: Cipher 'AES-128-CBC' initialized with 128 bit key
+Sat May 13 11:14:20 2017 109.166.130.185:9212 Data Channel Encrypt: Using 256 bit message hash 'SHA256' for HMAC authentication
+Sat May 13 11:14:20 2017 109.166.130.185:9212 Data Channel Decrypt: Cipher 'AES-128-CBC' initialized with 128 bit key
+Sat May 13 11:14:20 2017 109.166.130.185:9212 Data Channel Decrypt: Using 256 bit message hash 'SHA256' for HMAC authentication
+Sat May 13 11:14:20 2017 109.166.130.185:9212 Control Channel: TLSv1.2, cipher TLSv1/SSLv3 DHE-RSA-AES256-GCM-SHA384, 2048 bit RSA
+Sat May 13 11:14:20 2017 109.166.130.185:9212 [danpopescu] Peer Connection Initiated with [AF_INET]109.166.130.185:9212
+Sat May 13 11:14:20 2017 danpopescu/109.166.130.185:9212 MULTI_sva: pool returned IPv4=192.168.200.2, IPv6=(Not enabled)
+Sat May 13 11:14:20 2017 danpopescu/109.166.130.185:9212 MULTI: Learn: 192.168.200.2 -> danpopescu/109.166.130.185:9212
+Sat May 13 11:14:20 2017 danpopescu/109.166.130.185:9212 MULTI: primary virtual IP for danpopescu/109.166.130.185:9212: 192.168.200.2
+Sat May 13 11:14:23 2017 danpopescu/109.166.130.185:9212 PUSH: Received control message: 'PUSH_REQUEST'
+Sat May 13 11:14:23 2017 danpopescu/109.166.130.185:9212 send_push_reply(): safe_cap=940
+Sat May 13 11:14:23 2017 danpopescu/109.166.130.185:9212 SENT CONTROL [danpopescu]: 'PUSH_REPLY,route 192.168.100.0 255.255.255.0 192.168.200.1,route-gateway 192.168.200.1,topology subnet,ping 10,ping-restart 60,ifconfig 192.168.200.2 255.255.255.0' (status=1)
+Sat May 13 11:16:33 2017 danpopescu/109.166.130.185:9212 [danpopescu] Inactivity timeout (--ping-restart), restarting
+Sat May 13 11:16:33 2017 danpopescu/109.166.130.185:9212 SIGUSR1[soft,ping-restart] received, client-instance restarting
+Sat May 13 12:15:39 2017 109.166.130.185:13746 TLS: Initial packet from [AF_INET]109.166.130.185:13746, sid=7db3ad20 06241818
+Sat May 13 12:15:39 2017 109.166.130.185:13746 VERIFY OK: depth=2, C=RO, ST=B, L=Bucharest, O=PPSCU.COM, OU=CA, CN=root.ppscu.com, name=CA-PPSCU, emailAddress=mail@ppscu.com
+Sat May 13 12:15:39 2017 109.166.130.185:13746 VERIFY OK: depth=1, C=RO, ST=B, L=Bucharest, O=PPSCU.COM, OU=CA, CN=inter.ppscu.com, name=CA-PPSCU, emailAddress=mail@ppscu.com
+Sat May 13 12:15:39 2017 109.166.130.185:13746 VERIFY OK: depth=0, C=RO, ST=B, L=Bucharest, O=PPSCU.COM, OU=CA, CN=danpopescu, name=CA-PPSCU, emailAddress=mail@ppscu.com
+Sat May 13 12:15:39 2017 109.166.130.185:13746 Data Channel Encrypt: Cipher 'AES-128-CBC' initialized with 128 bit key
+Sat May 13 12:15:39 2017 109.166.130.185:13746 Data Channel Encrypt: Using 256 bit message hash 'SHA256' for HMAC authentication
+Sat May 13 12:15:39 2017 109.166.130.185:13746 Data Channel Decrypt: Cipher 'AES-128-CBC' initialized with 128 bit key
+Sat May 13 12:15:39 2017 109.166.130.185:13746 Data Channel Decrypt: Using 256 bit message hash 'SHA256' for HMAC authentication
+Sat May 13 12:15:39 2017 109.166.130.185:13746 Control Channel: TLSv1.2, cipher TLSv1/SSLv3 DHE-RSA-AES256-GCM-SHA384, 2048 bit RSA
+Sat May 13 12:15:39 2017 109.166.130.185:13746 [danpopescu] Peer Connection Initiated with [AF_INET]109.166.130.185:13746
+Sat May 13 12:15:39 2017 danpopescu/109.166.130.185:13746 MULTI_sva: pool returned IPv4=192.168.200.2, IPv6=(Not enabled)
+Sat May 13 12:15:39 2017 danpopescu/109.166.130.185:13746 MULTI: Learn: 192.168.200.2 -> danpopescu/109.166.130.185:13746
+Sat May 13 12:15:39 2017 danpopescu/109.166.130.185:13746 MULTI: primary virtual IP for danpopescu/109.166.130.185:13746: 192.168.200.2
+Sat May 13 12:15:42 2017 danpopescu/109.166.130.185:13746 PUSH: Received control message: 'PUSH_REQUEST'
+Sat May 13 12:15:42 2017 danpopescu/109.166.130.185:13746 send_push_reply(): safe_cap=940
+Sat May 13 12:15:42 2017 danpopescu/109.166.130.185:13746 SENT CONTROL [danpopescu]: 'PUSH_REPLY,route 192.168.100.0 255.255.255.0 192.168.200.1,route-gateway 192.168.200.1,topology subnet,ping 10,ping-restart 60,ifconfig 192.168.200.2 255.255.255.0' (status=1)
+Sat May 13 12:15:52 2017 109.166.130.185:6563 TLS: Initial packet from [AF_INET]109.166.130.185:6563, sid=6c7289ae 50fa29fd
+Sat May 13 12:15:53 2017 109.166.130.185:6563 VERIFY OK: depth=2, C=RO, ST=B, L=Bucharest, O=PPSCU.COM, OU=CA, CN=root.ppscu.com, name=CA-PPSCU, emailAddress=mail@ppscu.com
+Sat May 13 12:15:53 2017 109.166.130.185:6563 VERIFY OK: depth=1, C=RO, ST=B, L=Bucharest, O=PPSCU.COM, OU=CA, CN=inter.ppscu.com, name=CA-PPSCU, emailAddress=mail@ppscu.com
+Sat May 13 12:15:53 2017 109.166.130.185:6563 VERIFY OK: depth=0, C=RO, ST=B, L=Bucharest, O=PPSCU.COM, OU=CA, CN=danpopescu, name=CA-PPSCU, emailAddress=mail@ppscu.com
+Sat May 13 12:15:53 2017 109.166.130.185:6563 Data Channel Encrypt: Cipher 'AES-128-CBC' initialized with 128 bit key
+Sat May 13 12:15:53 2017 109.166.130.185:6563 Data Channel Encrypt: Using 256 bit message hash 'SHA256' for HMAC authentication
+Sat May 13 12:15:53 2017 109.166.130.185:6563 Data Channel Decrypt: Cipher 'AES-128-CBC' initialized with 128 bit key
+Sat May 13 12:15:53 2017 109.166.130.185:6563 Data Channel Decrypt: Using 256 bit message hash 'SHA256' for HMAC authentication
+Sat May 13 12:15:53 2017 109.166.130.185:6563 Control Channel: TLSv1.2, cipher TLSv1/SSLv3 DHE-RSA-AES256-GCM-SHA384, 2048 bit RSA
+Sat May 13 12:15:53 2017 109.166.130.185:6563 [danpopescu] Peer Connection Initiated with [AF_INET]109.166.130.185:6563
+Sat May 13 12:15:53 2017 MULTI: new connection by client 'danpopescu' will cause previous active sessions by this client to be dropped.  Remember to use the --duplicate-cn option if you want multiple clients using the same certificate or username to concurrently connect.
+Sat May 13 12:15:53 2017 MULTI_sva: pool returned IPv4=192.168.200.2, IPv6=(Not enabled)
+Sat May 13 12:15:53 2017 MULTI: Learn: 192.168.200.2 -> danpopescu/109.166.130.185:6563
+Sat May 13 12:15:53 2017 MULTI: primary virtual IP for danpopescu/109.166.130.185:6563: 192.168.200.2
+Sat May 13 12:15:55 2017 danpopescu/109.166.130.185:6563 PUSH: Received control message: 'PUSH_REQUEST'
+Sat May 13 12:15:55 2017 danpopescu/109.166.130.185:6563 send_push_reply(): safe_cap=940
+Sat May 13 12:15:55 2017 danpopescu/109.166.130.185:6563 SENT CONTROL [danpopescu]: 'PUSH_REPLY,route 192.168.100.0 255.255.255.0 192.168.200.1,route-gateway 192.168.200.1,topology subnet,ping 10,ping-restart 60,ifconfig 192.168.200.2 255.255.255.0' (status=1)
+Sat May 13 12:26:59 2017 danpopescu/109.166.130.185:6563 [danpopescu] Inactivity timeout (--ping-restart), restarting
+Sat May 13 12:26:59 2017 danpopescu/109.166.130.185:6563 SIGUSR1[soft,ping-restart] received, client-instance restarting

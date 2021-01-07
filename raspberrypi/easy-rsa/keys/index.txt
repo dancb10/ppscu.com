@@ -1,0 +1,4 @@
+V	171113191322Z		1000	unknown	/C=RO/ST=B/L=Bucharest/O=PPSCU.COM/OU=CA/CN=inter.ppscu.com/name=CA-PPSCU/emailAddress=mail@ppscu.com
+V	171113191429Z		1001	unknown	/C=RO/ST=B/L=Bucharest/O=PPSCU.COM/OU=CA/CN=vpn.ppscu.com/name=CA-PPSCU/emailAddress=mail@ppscu.com
+V	171113191521Z		1002	unknown	/C=RO/ST=B/L=Bucharest/O=PPSCU.COM/OU=CA/CN=danpopescu/name=CA-PPSCU/emailAddress=mail@ppscu.com
+V	171119182700Z		1003	unknown	/C=RO/ST=B/L=Bucharest/O=PPSCU.COM/OU=CA/CN=sergiuniculas/name=CA-PPSCU/emailAddress=mail@ppscu.com

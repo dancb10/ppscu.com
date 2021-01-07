@@ -1,0 +1,115 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 4096 (0x1000)
+    Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C=RO, ST=B, L=Bucharest, O=PPSCU.COM, OU=CA, CN=root.ppscu.com/name=CA-PPSCU/emailAddress=mail@ppscu.com
+        Validity
+            Not Before: May 11 19:13:22 2017 GMT
+            Not After : Nov 13 19:13:22 2017 GMT
+        Subject: C=RO, ST=B, L=Bucharest, O=PPSCU.COM, OU=CA, CN=inter.ppscu.com/name=CA-PPSCU/emailAddress=mail@ppscu.com
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:b0:c6:68:19:7e:ec:50:28:ae:fc:35:0b:ef:82:
+                    c1:ee:d9:f2:b9:b0:70:20:e7:2c:56:6f:2d:71:cc:
+                    5b:d5:a0:ba:88:31:c2:cf:a0:71:4a:85:9d:59:7c:
+                    ef:f1:81:74:f4:b6:5b:ff:8d:92:cc:fb:7d:6f:63:
+                    c3:3c:ca:eb:7c:57:8b:08:ee:8e:68:82:12:cd:77:
+                    48:e6:38:ca:f7:42:b7:24:04:8f:bb:10:70:df:aa:
+                    ac:c2:b8:e5:ab:43:9d:5a:05:0f:a5:54:f1:d5:f5:
+                    8a:5a:6f:3a:77:57:c5:e0:1d:b3:d9:4d:81:e6:8f:
+                    b5:9d:d8:9f:9c:51:33:d9:9b:e5:dd:43:bc:66:05:
+                    2b:73:d9:ec:bb:89:59:ee:17:18:f5:04:bc:20:03:
+                    60:33:3d:58:a0:1d:07:47:63:71:71:92:66:db:a4:
+                    16:3a:ee:59:84:77:e0:d5:30:5e:7f:41:1c:3e:7e:
+                    1f:e5:64:6c:3e:02:b4:9d:83:07:97:cc:ec:6b:df:
+                    4d:4c:5f:fa:d6:3b:f1:aa:aa:9b:ad:71:85:c9:08:
+                    32:c7:53:60:60:26:f5:76:ea:11:5c:96:7b:e9:56:
+                    28:aa:31:80:7e:e9:8c:04:58:29:c2:c7:c3:f8:63:
+                    b1:17:fc:36:c2:01:69:62:fa:47:e8:a8:ad:57:0e:
+                    42:2b
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Subject Key Identifier: 
+                34:E4:9A:E9:4D:29:7D:C5:06:81:FE:E9:0B:04:02:7E:1C:84:00:E8
+            X509v3 Authority Key Identifier: 
+                keyid:0A:F7:03:08:32:4D:84:B8:16:FE:9C:81:0B:F3:15:0D:7C:BE:2F:93
+                DirName:/C=RO/ST=B/L=Bucharest/O=PPSCU.COM/OU=CA/CN=root.ppscu.com/name=CA-PPSCU/emailAddress=mail@ppscu.com
+                serial:9A:82:F3:F6:64:3F:99:7A
+
+            X509v3 Basic Constraints: 
+                CA:TRUE
+    Signature Algorithm: sha256WithRSAEncryption
+         37:30:7f:07:44:f8:e3:6f:2c:d6:ad:cb:f8:9d:cd:36:be:ed:
+         d5:f9:7b:8c:b4:cc:64:6e:27:b5:03:6d:e9:70:9f:0e:37:b2:
+         67:e0:ee:30:66:09:f6:10:60:48:7e:12:7c:cb:94:ba:53:11:
+         bc:4f:17:91:2c:6b:a4:c7:32:7c:a4:92:17:82:eb:db:42:83:
+         f7:41:96:db:b4:16:b2:39:03:e7:50:6d:e4:cc:2b:42:a2:a1:
+         f7:dc:9f:00:ca:3e:59:28:f0:72:94:68:44:ae:c9:b3:61:e4:
+         20:9f:b3:68:2e:e3:24:7a:c8:fd:5f:48:33:14:2a:6a:1f:67:
+         1b:3a:dd:1f:f0:ea:4a:60:6e:d7:8f:d0:44:0a:8c:23:fc:d7:
+         32:1f:6f:37:c9:b1:34:e6:cc:89:ad:22:91:f2:bb:90:00:40:
+         db:d9:95:6e:d1:1f:28:41:75:94:ef:71:7e:e5:16:71:ec:f0:
+         9e:6d:ea:30:87:02:5a:69:fe:d7:d6:c3:9f:41:2c:c5:97:14:
+         69:ef:0f:40:55:cf:18:f6:d7:d9:e9:51:10:99:9a:81:ad:b6:
+         58:79:da:72:6f:5b:3d:53:9c:bd:45:5c:5c:71:53:a8:fd:a2:
+         36:8d:36:df:83:f5:e1:49:95:ed:1e:65:ac:42:00:23:aa:0a:
+         9a:82:7e:ad
+-----BEGIN CERTIFICATE-----
+MIIEtDCCA5ygAwIBAgICEAAwDQYJKoZIhvcNAQELBQAwgZkxCzAJBgNVBAYTAlJP
+MQowCAYDVQQIEwFCMRIwEAYDVQQHEwlCdWNoYXJlc3QxEjAQBgNVBAoTCVBQU0NV
+LkNPTTELMAkGA1UECxMCQ0ExFzAVBgNVBAMTDnJvb3QucHBzY3UuY29tMREwDwYD
+VQQpEwhDQS1QUFNDVTEdMBsGCSqGSIb3DQEJARYObWFpbEBwcHNjdS5jb20wHhcN
+MTcwNTExMTkxMzIyWhcNMTcxMTEzMTkxMzIyWjCBmjELMAkGA1UEBhMCUk8xCjAI
+BgNVBAgTAUIxEjAQBgNVBAcTCUJ1Y2hhcmVzdDESMBAGA1UEChMJUFBTQ1UuQ09N
+MQswCQYDVQQLEwJDQTEYMBYGA1UEAxMPaW50ZXIucHBzY3UuY29tMREwDwYDVQQp
+EwhDQS1QUFNDVTEdMBsGCSqGSIb3DQEJARYObWFpbEBwcHNjdS5jb20wggEiMA0G
+CSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCwxmgZfuxQKK78NQvvgsHu2fK5sHAg
+5yxWby1xzFvVoLqIMcLPoHFKhZ1ZfO/xgXT0tlv/jZLM+31vY8M8yut8V4sI7o5o
+ghLNd0jmOMr3QrckBI+7EHDfqqzCuOWrQ51aBQ+lVPHV9Ypabzp3V8XgHbPZTYHm
+j7Wd2J+cUTPZm+XdQ7xmBStz2ey7iVnuFxj1BLwgA2AzPVigHQdHY3FxkmbbpBY6
+7lmEd+DVMF5/QRw+fh/lZGw+ArSdgweXzOxr301MX/rWO/GqqputcYXJCDLHU2Bg
+JvV26hFclnvpViiqMYB+6YwEWCnCx8P4Y7EX/DbCAWli+kfoqK1XDkIrAgMBAAGj
+ggEBMIH+MB0GA1UdDgQWBBQ05JrpTSl9xQaB/ukLBAJ+HIQA6DCBzgYDVR0jBIHG
+MIHDgBQK9wMIMk2EuBb+nIEL8xUNfL4vk6GBn6SBnDCBmTELMAkGA1UEBhMCUk8x
+CjAIBgNVBAgTAUIxEjAQBgNVBAcTCUJ1Y2hhcmVzdDESMBAGA1UEChMJUFBTQ1Uu
+Q09NMQswCQYDVQQLEwJDQTEXMBUGA1UEAxMOcm9vdC5wcHNjdS5jb20xETAPBgNV
+BCkTCENBLVBQU0NVMR0wGwYJKoZIhvcNAQkBFg5tYWlsQHBwc2N1LmNvbYIJAJqC
+8/ZkP5l6MAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQELBQADggEBADcwfwdE+ONv
+LNaty/idzTa+7dX5e4y0zGRuJ7UDbelwnw43smfg7jBmCfYQYEh+EnzLlLpTEbxP
+F5Esa6THMnykkheC69tCg/dBltu0FrI5A+dQbeTMK0KioffcnwDKPlko8HKUaESu
+ybNh5CCfs2gu4yR6yP1fSDMUKmofZxs63R/w6kpgbteP0EQKjCP81zIfbzfJsTTm
+zImtIpHyu5AAQNvZlW7RHyhBdZTvcX7lFnHs8J5t6jCHAlpp/tfWw59BLMWXFGnv
+D0BVzxj219npURCZmoGttlh52nJvWz1TnL1FXFxxU6j9ojaNNt+D9eFJle0eZaxC
+ACOqCpqCfq0=
+-----END CERTIFICATE-----
+-----BEGIN CERTIFICATE-----
+MIIEujCCA6KgAwIBAgIJAJqC8/ZkP5l6MA0GCSqGSIb3DQEBCwUAMIGZMQswCQYD
+VQQGEwJSTzEKMAgGA1UECBMBQjESMBAGA1UEBxMJQnVjaGFyZXN0MRIwEAYDVQQK
+EwlQUFNDVS5DT00xCzAJBgNVBAsTAkNBMRcwFQYDVQQDEw5yb290LnBwc2N1LmNv
+bTERMA8GA1UEKRMIQ0EtUFBTQ1UxHTAbBgkqhkiG9w0BCQEWDm1haWxAcHBzY3Uu
+Y29tMB4XDTE3MDUxMTE5MTIzN1oXDTE3MTExMzE5MTIzN1owgZkxCzAJBgNVBAYT
+AlJPMQowCAYDVQQIEwFCMRIwEAYDVQQHEwlCdWNoYXJlc3QxEjAQBgNVBAoTCVBQ
+U0NVLkNPTTELMAkGA1UECxMCQ0ExFzAVBgNVBAMTDnJvb3QucHBzY3UuY29tMREw
+DwYDVQQpEwhDQS1QUFNDVTEdMBsGCSqGSIb3DQEJARYObWFpbEBwcHNjdS5jb20w
+ggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDFviPhyBjhB08PoN4xvhas
+JBFpFqvK8sz5btersEVZMhk3XBojlF0TgBysYfY/Cx1BQMt0X3gxGodFuBlQ+h//
+kP406W8wYhel/PL9r+kREUvCZBsHkDEIyC85NxO9PwEEH1663FPYuzbHn6L3oW7Y
+/rYiJcM2DQlP3MNKJyoGl3SXDopd2QvlL0ZbUZKy33xUwl997UlJGE4AClqez7Kj
+qzzb26fmlwubwb/Em1rkB3fMTxsj9iYu1trnV1+ZXg28cvfrmka0e5vIXC7tP7S1
+IVMAvOU5sOpew2zQ4NUJrXKzmjOP7pQc46ec5+SP0YnkSchc8dZCVtjiPk3eu/V5
+AgMBAAGjggEBMIH+MB0GA1UdDgQWBBQK9wMIMk2EuBb+nIEL8xUNfL4vkzCBzgYD
+VR0jBIHGMIHDgBQK9wMIMk2EuBb+nIEL8xUNfL4vk6GBn6SBnDCBmTELMAkGA1UE
+BhMCUk8xCjAIBgNVBAgTAUIxEjAQBgNVBAcTCUJ1Y2hhcmVzdDESMBAGA1UEChMJ
+UFBTQ1UuQ09NMQswCQYDVQQLEwJDQTEXMBUGA1UEAxMOcm9vdC5wcHNjdS5jb20x
+ETAPBgNVBCkTCENBLVBQU0NVMR0wGwYJKoZIhvcNAQkBFg5tYWlsQHBwc2N1LmNv
+bYIJAJqC8/ZkP5l6MAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQELBQADggEBAAcf
+Spnl0y7fBiNERMxwNqKGBfu7IkElgL+trZ5w8O3WJ9ZYhoS7Ez1B2F/oZaXzcQLO
+gkKj1RqXwT+RZx8sE96qBVKdiajm1FwbP2DEYdYZf10GOEbtQummcWE79Kmy0MXY
+09sTwVrIGpsmjbI811HPRSmDYKormM6gbckmcsMwNF1uTXmJ+Q1vFzQ0jM2RTPvu
+h+MEv4kSk2FjzlsHMjIm+wENbhTbg32Id1m8HC39OaqFZ00MokxjCTZMlgi0cR6V
+3Y4K4UNN50/kYJjwkZ5ZCAgPHOrB4iEmdYO00UQhaOF5o7hMGjjimPJCR7qSLwmL
+TBbiEKwGsmNmGDwnAiI=
+-----END CERTIFICATE-----

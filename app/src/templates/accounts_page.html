@@ -1,0 +1,12 @@
+<html lang="">
+    <head>
+        <title>{{ title }}</title>
+    </head>
+    <body>
+        <h1>{{title}}</h1>
+        {% for account in accounts %}
+        Username: {{account.username}}
+        Email: {{account.email}}<br>
+        {% endfor %}
+    </body>
+</html>

@@ -1,0 +1,214 @@
+@startuml
+object users
+users : userid[PK]: UUID
+users : create_date: timestamp
+users : update_date: timestamp
+users : first_name: text
+users : last_name: text
+users : nick_name: text
+users : country_code: int
+users : number: text
+users : email: text
+users : password: text
+users : age: decimal
+users : gender: text
+users : nationality: text
+users : country: text
+users : city : text
+users : address: text
+users : communities: list<text>
+
+object user_by_email
+user_by_email : email[PK]: text
+user_by_email : password: text
+user_by_email : userid: UUID
+
+users .. user_by_email
+
+object communities
+communities : communityid[PK]: UUID
+communities : create_date: timestamp
+communities : update_date: timestamp
+communities : name: text
+communities : summary: text
+communities : country: text
+communities : city : text
+communities : visibility: string
+communities : group_creation: string
+communities : labels<string>
+
+object communities_by_visibility
+communities_by_visibility : visibility[PK]: text
+communities_by_visibility : communityid[CK]: UUID
+communities_by_visibility : name: text
+communities_by_visibility : summary: text
+communities_by_visibility : country: text
+communities_by_visibility : city : text
+communities_by_visibility : labels<string>
+
+object communities_by_create_date
+communities_by_create_date : create_date[PK]: text
+communities_by_create_date : communityid: UUID
+communities_by_create_date : name: text
+communities_by_create_date : summary: text
+communities_by_create_date : country: text
+communities_by_create_date : city : text
+communities_by_create_date : labels<string>
+
+communities .. communities_by_visibility
+communities .. communities_by_create_date
+
+object groups
+groups : groupid[PK]: UUID
+groups : communityid: UUID
+groups : create_date: timestamp
+groups : update_date: timestamp
+groups : name: text
+groups : summary: text
+groups : country: text
+groups : city : text
+groups : type: string
+groups : visibility: string
+groups : labels<string>
+
+object groups_by_community
+groups_by_community : communityid[PK]: UUID
+groups_by_community : groupid[CK]: UUID
+groups_by_community : name: text
+groups_by_community : summary: text
+groups_by_community : country: text
+groups_by_community : city : text
+groups_by_community : labels<string>
+
+object groups_users
+groups_users : groupid[PK]: UUID
+groups_users : userid: UUID
+groups_users : role: text
+
+object groups_by_user
+groups_by_user : userid[PK]: UUID
+groups_by_user : groupid: UUID
+groups_by_user : name: text
+groups_by_user : summary: text
+groups_by_user : country: text
+groups_by_user : city : text
+groups_by_user : labels<string>
+
+groups .. groups_by_community
+groups .. groups_users
+groups .. groups_by_user
+
+object threads
+threads : threadid[PK]: UUID
+threads : create_date[CK]: timestamp
+threads : groupid: UUID
+threads : update_date: timestamp
+threads : name: text
+threads : summary: text
+threads : content: text
+threads : votesup: bigint
+threads : votesdown: bigint
+threads : labels list<text>
+
+object threads_by_group_create_date
+threads_by_group_create_date : groupid[PK]: UUID
+threads_by_group_create_date : create_date[CK]: timestamp
+threads_by_group_create_date : threadid: UUID
+threads_by_group_create_date : name: text
+threads_by_group_create_date : summary: text
+threads_by_group_create_date : votesup: bigint
+threads_by_group_create_date : votesdown: bigint
+threads_by_group_create_date : labels list<text>
+
+object thread_user_votes_up
+thread_user_votes_up : threadid[PK]: UUID
+thread_user_votes_up : userid[CK]: UUID
+
+object thread_user_votes_down
+thread_user_votes_down : threadid[PK]: UUID
+thread_user_votes_down : userid[CK]: UUID
+
+object threads_by_group_votes_up
+threads_by_group_votes_up : groupid[PK]: UUID
+threads_by_group_votes_up : votesup[CK]: bigint
+threads_by_group_votes_up : votesdown: bigint
+threads_by_group_votes_up : threadid: UUID
+threads_by_group_votes_up : name: text
+threads_by_group_votes_up : summary: text
+threads_by_group_votes_up : create_date: timestamp
+threads_by_group_votes_up : labels list<text>
+
+object threads_by_group_votes_down
+threads_by_group_votes_down : groupid[PK]: UUID
+threads_by_group_votes_down : votesdown[CK]: bigint
+threads_by_group_votes_down : votesup: bigint
+threads_by_group_votes_down : votesdown: bigint
+threads_by_group_votes_down : threadid: UUID
+threads_by_group_votes_down : name: text
+threads_by_group_votes_down : summary: text
+threads_by_group_votes_down : create_date: timestamp
+threads_by_group_votes_down : labels list<text>
+
+object threads_by_label
+threads_by_label : label[PK]: string
+threads_by_label : threadid: UUID
+threads_by_label : name: text
+threads_by_label : summary: text
+threads_by_label : create_date: timestamp
+threads_by_label : votes: bigint
+
+threads .. threads_by_group_create_date
+threads .. thread_user_votes_up
+threads .. thread_user_votes_down
+threads .. threads_by_group_votes_down
+threads .. threads_by_group_votes_up
+threads .. threads_by_label
+
+object replies
+replies : threadid[PK]: UUID
+replies : create_date[CK]: timestamp
+replies : replyid: UUID
+replies : update_date: timestamp
+replies : summary: text
+replies : content: text
+
+object replies_by_thread
+replies_by_thread : threadid[PK]: UUID
+replies_by_thread : replyid: UUID
+replies_by_thread : create_date[CK]: timestamp
+replies_by_thread : update_date: timestamp
+replies_by_thread : summary: text
+
+replies .. replies_by_thread
+
+object votes
+votes : voteid[PK]: UUID
+votes : groupid: UUID
+votes : create_date: timestamp
+votes : expiry_date: timestamp
+votes : name: text
+votes : summary: text
+votes : content: text
+votes : percentage_voters: decimal
+votes : type: string
+
+object votes_by_group
+votes_by_group : groupid[PK]: UUID
+votes_by_group : voteid: UUID
+votes : expiry_date: timestamp
+votes : name: text
+votes : summary: text
+
+object voters_by_vote
+voters_by_vote : voteid[PK]: UUID
+voters_by_vote : userid: UUID
+
+votes .. votes_by_group
+votes .. voters_by_vote
+
+users -[hidden]--> communities
+communities -[hidden]--> groups
+groups -[hidden]--> threads
+threads -[hidden]--> replies
+
+@enduml

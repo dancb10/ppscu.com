@@ -1,0 +1,97 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number: 4099 (0x1003)
+    Signature Algorithm: sha256WithRSAEncryption
+        Issuer: C=RO, ST=B, L=Bucharest, O=PPSCU.COM, OU=CA, CN=inter.ppscu.com/name=CA-PPSCU/emailAddress=mail@ppscu.com
+        Validity
+            Not Before: May 17 18:27:00 2017 GMT
+            Not After : Nov 19 18:27:00 2017 GMT
+        Subject: C=RO, ST=B, L=Bucharest, O=PPSCU.COM, OU=CA, CN=sergiuniculas/name=CA-PPSCU/emailAddress=mail@ppscu.com
+        Subject Public Key Info:
+            Public Key Algorithm: rsaEncryption
+                Public-Key: (2048 bit)
+                Modulus:
+                    00:ac:54:7a:db:45:37:79:f7:39:17:72:e6:ec:29:
+                    67:6b:3b:a3:2a:15:dc:df:01:81:65:ed:cc:3c:44:
+                    50:7e:3b:e4:0d:e7:c6:c8:05:14:2a:3a:87:7d:92:
+                    88:3a:93:ae:b2:41:53:51:f9:f6:3d:5b:87:c9:1c:
+                    40:4b:cc:d1:32:8c:72:b9:ea:1f:10:d9:45:dd:bb:
+                    8d:ca:2d:80:64:c5:28:b7:54:24:2f:eb:28:bd:13:
+                    f0:52:08:a1:02:ac:db:a8:ec:a3:ed:16:ef:4c:52:
+                    4a:6a:e7:a0:c5:64:69:58:ed:14:9f:df:f0:dc:e1:
+                    b3:45:c7:83:2f:56:c0:4a:4b:56:45:34:ec:45:e4:
+                    3b:c6:d1:70:45:46:00:d8:81:f2:9f:3a:cf:c7:a1:
+                    06:37:c7:13:3c:77:58:2e:bd:d3:37:13:ef:06:ba:
+                    b6:ec:bb:5b:d1:2b:6d:d1:2d:17:9a:0b:65:81:5b:
+                    6e:3a:78:e0:ff:d1:5e:00:6e:26:c0:2a:6f:43:0c:
+                    3f:3f:0e:0c:12:61:e0:6c:85:40:86:aa:0d:89:41:
+                    f2:f4:98:ac:3d:f3:9c:7c:f0:5d:8d:b3:97:e9:e4:
+                    aa:db:f5:a9:f3:ec:4c:de:77:a8:fc:84:1b:88:b4:
+                    a8:eb:9f:75:48:ce:8b:30:73:34:52:09:c8:76:a5:
+                    2f:59
+                Exponent: 65537 (0x10001)
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            Netscape Comment: 
+                Easy-RSA Generated Certificate
+            X509v3 Subject Key Identifier: 
+                59:6F:67:A1:89:E4:38:D1:E6:28:39:D3:6C:AC:DF:30:83:31:9A:CE
+            X509v3 Authority Key Identifier: 
+                keyid:34:E4:9A:E9:4D:29:7D:C5:06:81:FE:E9:0B:04:02:7E:1C:84:00:E8
+                DirName:/C=RO/ST=B/L=Bucharest/O=PPSCU.COM/OU=CA/CN=root.ppscu.com/name=CA-PPSCU/emailAddress=mail@ppscu.com
+                serial:10:00
+
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication
+            X509v3 Key Usage: 
+                Digital Signature
+            X509v3 Subject Alternative Name: 
+                DNS:sergiuniculas
+    Signature Algorithm: sha256WithRSAEncryption
+         7b:bd:f7:fe:57:f9:94:54:d5:b1:1f:25:55:6d:1a:b0:00:49:
+         d2:e7:88:45:61:50:33:13:45:a0:75:8d:09:9d:28:41:63:30:
+         3c:e6:b9:14:17:55:14:a8:55:5d:2b:f1:0e:61:7a:1b:9c:1c:
+         6c:39:76:37:38:06:69:da:e7:f0:b6:60:72:3c:57:02:2d:9c:
+         7e:b6:b1:1e:a5:14:10:51:62:03:4f:dd:56:dc:f8:38:f8:96:
+         67:cd:7f:bb:b6:f0:a2:4a:70:73:96:67:18:02:e9:10:bf:15:
+         3f:ce:64:79:0d:2c:c7:9a:3d:ae:55:c4:93:28:dd:dd:82:6e:
+         97:31:9e:60:bb:2a:8d:d9:93:c0:fa:08:cb:8d:92:b4:8a:67:
+         54:42:0d:ea:77:73:59:00:ff:1e:b2:82:20:b1:a5:67:e6:d2:
+         29:d8:34:69:c4:39:90:7c:c4:85:3b:e3:7c:9d:a9:61:13:cb:
+         a6:18:13:ea:ae:74:b9:09:43:bc:b9:49:b9:55:4d:74:98:11:
+         a3:9b:a3:5b:82:8b:91:ca:91:11:ac:38:7d:46:e5:05:8c:eb:
+         9e:d2:b2:3b:7c:6b:01:c6:45:82:49:e4:a5:19:2f:99:15:4d:
+         90:d1:e2:51:ed:81:9c:6f:62:32:40:ec:18:6f:cc:c9:1a:99:
+         61:a1:2b:0b
+-----BEGIN CERTIFICATE-----
+MIIFFTCCA/2gAwIBAgICEAMwDQYJKoZIhvcNAQELBQAwgZoxCzAJBgNVBAYTAlJP
+MQowCAYDVQQIEwFCMRIwEAYDVQQHEwlCdWNoYXJlc3QxEjAQBgNVBAoTCVBQU0NV
+LkNPTTELMAkGA1UECxMCQ0ExGDAWBgNVBAMTD2ludGVyLnBwc2N1LmNvbTERMA8G
+A1UEKRMIQ0EtUFBTQ1UxHTAbBgkqhkiG9w0BCQEWDm1haWxAcHBzY3UuY29tMB4X
+DTE3MDUxNzE4MjcwMFoXDTE3MTExOTE4MjcwMFowgZgxCzAJBgNVBAYTAlJPMQow
+CAYDVQQIEwFCMRIwEAYDVQQHEwlCdWNoYXJlc3QxEjAQBgNVBAoTCVBQU0NVLkNP
+TTELMAkGA1UECxMCQ0ExFjAUBgNVBAMTDXNlcmdpdW5pY3VsYXMxETAPBgNVBCkT
+CENBLVBQU0NVMR0wGwYJKoZIhvcNAQkBFg5tYWlsQHBwc2N1LmNvbTCCASIwDQYJ
+KoZIhvcNAQEBBQADggEPADCCAQoCggEBAKxUettFN3n3ORdy5uwpZ2s7oyoV3N8B
+gWXtzDxEUH475A3nxsgFFCo6h32SiDqTrrJBU1H59j1bh8kcQEvM0TKMcrnqHxDZ
+Rd27jcotgGTFKLdUJC/rKL0T8FIIoQKs26jso+0W70xSSmrnoMVkaVjtFJ/f8Nzh
+s0XHgy9WwEpLVkU07EXkO8bRcEVGANiB8p86z8ehBjfHEzx3WC690zcT7wa6tuy7
+W9ErbdEtF5oLZYFbbjp44P/RXgBuJsAqb0MMPz8ODBJh4GyFQIaqDYlB8vSYrD3z
+nHzwXY2zl+nkqtv1qfPsTN53qPyEG4i0qOufdUjOizBzNFIJyHalL1kCAwEAAaOC
+AWMwggFfMAkGA1UdEwQCMAAwLQYJYIZIAYb4QgENBCAWHkVhc3ktUlNBIEdlbmVy
+YXRlZCBDZXJ0aWZpY2F0ZTAdBgNVHQ4EFgQUWW9noYnkONHmKDnTbKzfMIMxms4w
+gccGA1UdIwSBvzCBvIAUNOSa6U0pfcUGgf7pCwQCfhyEAOihgZ+kgZwwgZkxCzAJ
+BgNVBAYTAlJPMQowCAYDVQQIEwFCMRIwEAYDVQQHEwlCdWNoYXJlc3QxEjAQBgNV
+BAoTCVBQU0NVLkNPTTELMAkGA1UECxMCQ0ExFzAVBgNVBAMTDnJvb3QucHBzY3Uu
+Y29tMREwDwYDVQQpEwhDQS1QUFNDVTEdMBsGCSqGSIb3DQEJARYObWFpbEBwcHNj
+dS5jb22CAhAAMBMGA1UdJQQMMAoGCCsGAQUFBwMCMAsGA1UdDwQEAwIHgDAYBgNV
+HREEETAPgg1zZXJnaXVuaWN1bGFzMA0GCSqGSIb3DQEBCwUAA4IBAQB7vff+V/mU
+VNWxHyVVbRqwAEnS54hFYVAzE0WgdY0JnShBYzA85rkUF1UUqFVdK/EOYXobnBxs
+OXY3OAZp2ufwtmByPFcCLZx+trEepRQQUWIDT91W3Pg4+JZnzX+7tvCiSnBzlmcY
+AukQvxU/zmR5DSzHmj2uVcSTKN3dgm6XMZ5guyqN2ZPA+gjLjZK0imdUQg3qd3NZ
+AP8esoIgsaVn5tIp2DRpxDmQfMSFO+N8nalhE8umGBPqrnS5CUO8uUm5VU10mBGj
+m6NbgouRypERrDh9RuUFjOue0rI7fGsBxkWCSeSlGS+ZFU2Q0eJR7YGcb2IyQOwY
+b8zJGplhoSsL
+-----END CERTIFICATE-----

@@ -1,0 +1,2 @@
+class NoHealthyInstancesForDomainException(Exception):
+    pass

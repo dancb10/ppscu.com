@@ -1,0 +1,49 @@
+### Authentication ###
+
+provider "openstack" {
+  user_name   = "{{ var.authentication.user_name }}"
+  tenant_name = "{{ var.authentication.tenant_name }}"
+  password    = "{{ var.authentication.password }}"
+  auth_url    = "{{ var.authentication.auth_url }}"
+  {%- if var.authentication.region is defined  -%}
+  region = "{{ var.authentication.region }}"
+  {%- endif %}
+}
+
+module "{{ var.network.name }}" {
+  source = "../../modules/networking/network"
+    network_name = "{{ var.network.name }}"
+    admin_state_up = "{{ var.network.state_up }}"
+    subnet_name = "{{ var.network.subnet.name }}"
+    subnet_cidr = "{{ var.network.subnet.cidr }}"
+}
+
+module "{{ var.network.router.name }}" {
+  source = "../../modules/networking/router"
+    router_name = "{{ var.network.router.name }}"
+    router_externalgw = "${ var.external_network_uuid }"
+    router_subnetid = "${ module.{{ var.network.name }}.subnet_id }"
+}
+
+{%- for instance in var.instances %}
+module "{{ instance.role }}" {
+  source = "../../modules/instances"
+     instance_region = "{{ var.project.region }}"
+     instance_domain = "{{ var.project.domain }}"
+     instance_role = "{{ instance.role }}"
+     instance_count = "{{ instance.count }}"
+     instance_flavor = "${lookup(var.flavor, "{{ instance.role }}" )}"
+     instance_image = "${lookup(var.images, "{{ instance.os }}" )}"
+     internal_network = "${ module.{{ instance.network.name }}.network_id }"
+     security_groups = "{{ instance.security_groups }}"
+     key_pair = "admin-keypair"
+     {%- if instance.network.floating_ip == True %}
+     floating_pool = "external_network"
+     {%- endif %}
+}
+{% endfor %}
+
+resource "openstack_compute_keypair_v2" "admin-keypair" {
+  name       = "admin-keypair"
+  public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDe/UY2m24End3+8849Au+tnQJ4q/jmZ59j2Er3poePSaHwBc7xfMfAvHsihrtRpP29df1XiiBuq+m/Y29xPr1np/e9U9pQzO4h1ImGvXVjv3siMeemgEW4QhdIKbowt+EsQJJ1fpcg1bTEW4ZUwZdrHMXRmWeXmbN/Yzd8ASx2pogipS9j/wxwqepR+XUj203gteLAFMFGPYLAPQnMGrMWkxuth0k2SvwrqW+YCmVj3NjrdcKvF0bdmDozNIcO4WmM7AewFS2nL615s/nUw3KDDwMTa9RWjIle13Bty3kHQRHxFD/NHeX0yj+yTt6uD11s1fiV8HJKqrnmkdMwBAyF admin@rheltest"
+}

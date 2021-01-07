@@ -1,0 +1,17 @@
+#!/bin/bash
+
+VPNSUBNET=192.168.200.0
+VPNPREFIX=/24
+VPNINTERFACE=eth0
+OVPN=/vpn-ppscu
+
+iptables --flush
+echo net.ipv4.ip_forward=1 > /etc/sysctl.conf
+sysctl -p
+iptables -t nat -A POSTROUTING -s $VPNSUBNET$VPNPREFIX -o $VPNINTERFACE -j MASQUERADE
+
+cd /vpn-ppscu/logs
+touch tcp.log
+
+while true ; do openvpn $OVPN/udp.conf ; done >> udp.log &
+tail -F *.log
