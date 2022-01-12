@@ -15,7 +15,7 @@ itsdangerous==1.1.0
 Jinja2==2.11.2
 MarkupSafe==1.1.1
 marshmallow==3.9.1
-pipenv==2020.11.15
+pipenv==2022.1.8
 pyaml==20.4.0
 pytz==2020.4
 PyYAML==5.3.1
